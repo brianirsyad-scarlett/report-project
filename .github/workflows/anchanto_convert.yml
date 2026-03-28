@@ -1,4 +1,4 @@
-name: Daily Excel Anchanto xlsx to Google Sheets conversion
+name: Anchanto convert
 
 on:
   schedule:
@@ -20,4 +20,4 @@ jobs:
         env:
           CLIENT_SECRET_JSON: ${{ secrets.CLIENT_SECRET_JSON }}
           REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
-        run: python convert.py
+        run: python anchanto_convert.py
